@@ -2,6 +2,7 @@ $default-color: #f56991;
 $default-color-dark: #e95780;
 $blog-color-dark: #dd4b39;
 $blog-color-light: #dd4b39;
+$bg-color: #f6e5c4;
 
 @font-face {
   font-family: "Roboto-Regular";
@@ -21,10 +22,51 @@ $blog-color-light: #dd4b39;
   font-family: "Roboto-Bold";
 }
 
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("../assets/fonts/quicksand/Quicksand-Regular.otf");
+}
+
+@font-face {
+  font-family: "Quicksand-Bold";
+  src: url("../assets/fonts/quicksand/Quicksand-Bold.otf");
+}
+
+.font-family-quicksand-r {
+  font-family: "Quicksand-Regular";
+}
+
+.font-family-quicksand-b {
+  font-family: "Quicksand-Bold";
+}
+
 .bg-default {
   background-color: $default-color;
 }
 
+.bg-body {
+  background-color: $bg-color;
+}
+
+.text-color-default {
+  color: $default-color;
+}
+
+.fill-default {
+  fill: $default-color;
+}
+
+.fill-secondary {
+  fill: #6c757d;
+}
+
+.nav-link {
+  color: #6c757d !important;
+}
+
+.nav-link:hover {
+  color: $default-color !important;
+}
 .btn-rounded {
   border-radius: 30px;
 }
