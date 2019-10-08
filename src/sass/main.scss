@@ -1,0 +1,21 @@
+$default-color: #f56991;
+$blog-color-dark: #dd4b39;
+$blog-color-light: #dd4b39;
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../assets/fonts/roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../assets/fonts/roboto/Roboto-Bold.ttf");
+}
+
+.font-family-roboto-r {
+  font-family: "Roboto-Regular";
+}
+
+.font-family-roboto-b {
+  font-family: "Roboto-Bold";
+}
