@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { ReactComponent as BrandLogo } from "../assets/svg/logo.svg";
+import { ReactComponent as BrandTitle } from "../assets/svg/title.svg";
 import {
   Collapse,
   Navbar,
@@ -28,9 +30,12 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <Navbar color="light" light expand="md">
+        <Navbar className="bg-body" light expand="md">
           <Container>
-            <NavbarBrand href="/">reactstrap</NavbarBrand>
+            <NavbarBrand className="d-flex align-items-center" href="/">
+              <BrandLogo className="fill-default" height="50" />
+              <BrandTitle className="ml-3 fill-secondary" height="30" />
+            </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav
