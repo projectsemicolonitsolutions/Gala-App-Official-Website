@@ -1,4 +1,5 @@
 $default-color: #f56991;
+$default-color-dark: #e95780;
 $blog-color-dark: #dd4b39;
 $blog-color-light: #dd4b39;
 
@@ -18,4 +19,20 @@ $blog-color-light: #dd4b39;
 
 .font-family-roboto-b {
   font-family: "Roboto-Bold";
+}
+
+.bg-default {
+  background-color: $default-color;
+}
+
+.btn-rounded {
+  border-radius: 30px;
+}
+
+.btn-default {
+  background-color: $default-color;
+  padding: 8px 16px;
+}
+.btn-default:hover {
+  background-color: $default-color-dark;
 }
