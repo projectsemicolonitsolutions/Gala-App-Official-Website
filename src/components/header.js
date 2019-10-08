@@ -7,11 +7,8 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Container
+  Container,
+  Button
 } from "reactstrap";
 
 class Header extends Component {
@@ -36,27 +33,26 @@ class Header extends Component {
             <NavbarBrand href="/">reactstrap</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
+              <Nav
+                className="ml-auto mr-3 font-family-roboto-b text-uppercase"
+                navbar
+              >
                 <NavItem>
-                  <NavLink href="/components/">Components</NavLink>
+                  <NavLink href="/">Home</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">
-                    GitHub
-                  </NavLink>
+                  <NavLink href="/features">Features</NavLink>
                 </NavItem>
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
-                    Options
-                  </DropdownToggle>
-                  <DropdownMenu right>
-                    <DropdownItem>Option 1</DropdownItem>
-                    <DropdownItem>Option 2</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>Reset</DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
+                <NavItem>
+                  <NavLink href="/blog">Blog</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/faqs">faqs</NavLink>
+                </NavItem>
               </Nav>
+              <Button className="btn-default border-0 btn-rounded text-uppercase font-family-roboto-r">
+                Become a Partner
+              </Button>
             </Collapse>
           </Container>
         </Navbar>
