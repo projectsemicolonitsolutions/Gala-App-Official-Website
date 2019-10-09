@@ -23,6 +23,11 @@ $bg-color: #f6e5c4;
 }
 
 @font-face {
+  font-family: "Quicksand-Light";
+  src: url("../assets/fonts/quicksand/Quicksand-Light.otf");
+}
+
+@font-face {
   font-family: "Quicksand-Regular";
   src: url("../assets/fonts/quicksand/Quicksand-Regular.otf");
 }
@@ -30,6 +35,10 @@ $bg-color: #f6e5c4;
 @font-face {
   font-family: "Quicksand-Bold";
   src: url("../assets/fonts/quicksand/Quicksand-Bold.otf");
+}
+
+.font-family-quicksand-l {
+  font-family: "Quicksand-Light";
 }
 
 .font-family-quicksand-r {
@@ -40,7 +49,8 @@ $bg-color: #f6e5c4;
   font-family: "Quicksand-Bold";
 }
 
-.bg-default {
+.bg-default,
+.btn-default {
   background-color: $default-color;
 }
 
@@ -48,12 +58,19 @@ $bg-color: #f6e5c4;
   background-color: $bg-color;
 }
 
-.text-color-default {
-  color: $default-color;
+.text-color-default,
+.input-default,
+.input-default:focus,
+.input-default::placeholder {
+  color: $default-color !important;
 }
 
 .fill-default {
   fill: $default-color;
+}
+
+.border-color-default {
+  border-color: $default-color !important;
 }
 
 .fill-secondary {
@@ -67,14 +84,67 @@ $bg-color: #f6e5c4;
 .nav-link:hover {
   color: $default-color !important;
 }
-.btn-rounded {
+.btn-rounded,
+.input-rounded,
+.btn-round-l,
+.input-round-l {
   border-radius: 30px;
 }
 
-.btn-default {
-  background-color: $default-color;
+.btn-large,
+.btn-round-l {
   padding: 8px 16px;
 }
+
 .btn-default:hover {
   background-color: $default-color-dark;
+}
+
+.input-large,
+.input-round-l {
+  padding: 20px 16px;
+}
+
+.font-size-150 {
+  font-size: 1.5rem;
+}
+
+.font-size-140 {
+  font-size: 1.4rem;
+}
+
+.font-size-130 {
+  font-size: 1.3rem;
+}
+
+.font-size-120 {
+  font-size: 1.2rem;
+}
+
+.font-size-95 {
+  font-size: 0.95rem;
+}
+
+.font-size-90 {
+  font-size: 0.9rem;
+}
+
+.font-size-80 {
+  font-size: 0.8rem;
+}
+
+.border-w2,
+.btn-default,
+.input-round-l {
+  border-width: 2px;
+}
+
+.border-color-default,
+.btn-default,
+.input-default {
+  border-color: $default-color;
+}
+
+.btn-default:hover {
+  border-color: $default-color-dark;
 }
