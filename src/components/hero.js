@@ -12,16 +12,12 @@ const Hero = () => {
   return (
     <main className="bg-body">
       <Row className="pt-4 m-0 align-items-stretch">
-        <Col
-          lg="6"
-          md="12"
-          className="d-flex flex-column justify-content-end mb-0"
-        >
-          <section className="text-center px-5">
+        <Col lg="6" md="12" className="d-flex flex-column justify-content-end">
+          <section className="text-center px-lg-5 px-md-3">
             <h4 className="font-family-quicksand-b">
               Best Mobile App for your Gala Adventure
             </h4>
-            <section className="px-5 mx-5">
+            <section className="px-lg-5 px-md-3 px-sm-2 mx-lg-5 mx-md-3 mx-sm-2">
               <p className="font-family-quicksand-r font-size-90 text-muted my-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
