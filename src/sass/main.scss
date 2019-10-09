@@ -1,9 +1,12 @@
+// ----- COLOR VARIABLES -----
 $default-color: #f56991;
 $default-color-dark: #e95780;
 $blog-color-dark: #dd4b39;
 $blog-color-light: #dd4b39;
 $bg-color: #f6e5c4;
 
+// ----- FONTS -----
+// - Roboto Font
 @font-face {
   font-family: "Roboto-Regular";
   src: url("../assets/fonts/roboto/Roboto-Regular.ttf");
@@ -22,6 +25,7 @@ $bg-color: #f6e5c4;
   font-family: "Roboto-Bold";
 }
 
+// - Quicksand Font
 @font-face {
   font-family: "Quicksand-Light";
   src: url("../assets/fonts/quicksand/Quicksand-Light.otf");
@@ -49,62 +53,7 @@ $bg-color: #f6e5c4;
   font-family: "Quicksand-Bold";
 }
 
-.bg-default,
-.btn-default {
-  background-color: $default-color;
-}
-
-.bg-body {
-  background-color: $bg-color;
-}
-
-.text-color-default,
-.input-default,
-.input-default:focus,
-.input-default::placeholder {
-  color: $default-color !important;
-}
-
-.fill-default {
-  fill: $default-color;
-}
-
-.border-color-default {
-  border-color: $default-color !important;
-}
-
-.fill-secondary {
-  fill: #6c757d;
-}
-
-.nav-link {
-  color: #6c757d !important;
-}
-
-.nav-link:hover {
-  color: $default-color !important;
-}
-.btn-rounded,
-.input-rounded,
-.btn-round-l,
-.input-round-l {
-  border-radius: 30px;
-}
-
-.btn-large,
-.btn-round-l {
-  padding: 8px 16px;
-}
-
-.btn-default:hover {
-  background-color: $default-color-dark;
-}
-
-.input-large,
-.input-round-l {
-  padding: 20px 16px;
-}
-
+// ----- FONT-SIZE -----
 .font-size-150 {
   font-size: 1.5rem;
 }
@@ -133,18 +82,78 @@ $bg-color: #f6e5c4;
   font-size: 0.8rem;
 }
 
+// ----- BACKGROUND COLOR -----
+.bg-default,
+.btn-default {
+  background-color: $default-color;
+}
+
+.btn-default:hover {
+  background-color: $default-color-dark;
+}
+
+.bg-body {
+  background-color: $bg-color;
+}
+
+// ----- TEXT COLOR -----
+.text-color-default,
+.input-default,
+.input-default:focus,
+.input-default::placeholder {
+  color: $default-color !important;
+}
+
+.nav-link {
+  color: #6c757d !important;
+}
+
+.nav-link:hover {
+  color: $default-color !important;
+}
+
+// ----- FILL COLOR -----
+.fill-default {
+  fill: $default-color;
+}
+
+.fill-secondary {
+  fill: #6c757d;
+}
+
+// ----- BORDER COLOR -----
+.border-color-default,
+.btn-default,
+.input-default {
+  border-color: $default-color !important;
+}
+
+.btn-default:hover {
+  border-color: $default-color-dark;
+}
+
+// ----- BORDER RADIUS -----
+.btn-rounded,
+.input-rounded,
+.btn-round-l,
+.input-round-l {
+  border-radius: 30px;
+}
+
+// ----- BORDER WIDTH -----
 .border-w2,
 .btn-default,
 .input-round-l {
   border-width: 2px;
 }
 
-.border-color-default,
-.btn-default,
-.input-default {
-  border-color: $default-color;
+// ----- PADDING -----
+.btn-large,
+.btn-round-l {
+  padding: 8px 16px;
 }
 
-.btn-default:hover {
-  border-color: $default-color-dark;
+.input-large,
+.input-round-l {
+  padding: 20px 16px;
 }
