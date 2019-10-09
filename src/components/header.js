@@ -28,9 +28,18 @@ class Header extends Component {
     });
   }
   render() {
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      prevScrollpos > currentScrollPos
+        ? (document.getElementById("navbar").style.top = "0")
+        : (document.getElementById("navbar").style.top = "-76px");
+
+      prevScrollpos = currentScrollPos;
+    };
     return (
       <header>
-        <Navbar className="bg-body" light expand="md">
+        <Navbar id="navbar" className="bg-body" fixed="top" light expand="md">
           <Container>
             <NavbarBrand className="d-flex align-items-center" href="/">
               <BrandLogo className="fill-default" height="50" />
