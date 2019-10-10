@@ -34,6 +34,11 @@
   src: url("../assets/fonts/quicksand/Quicksand-Bold.otf");
 }
 
+@font-face {
+  font-family: "Quicksand-Book";
+  src: url("../assets/fonts/quicksand/Quicksand-Book.otf");
+}
+
 .font-family-quicksand-l {
   font-family: "Quicksand-Light";
 }
@@ -44,6 +49,10 @@
 
 .font-family-quicksand-b {
   font-family: "Quicksand-Bold";
+}
+
+.font-family-quicksand-book {
+  font-family: "Quicksand-Book";
 }
 
 // ----- FONT-SIZE -----
