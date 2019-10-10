@@ -2,165 +2,12 @@
   scroll-behavior: smooth;
   transition: top 0.3s;
 }
-// ----- COLOR VARIABLES -----
-$default-color: #f56991;
-$default-color-dark: #e95780;
-$blog-color-dark: #dd4b39;
-$blog-color-light: #dd4b39;
-$bg-color: #f6e5c4;
-
-// ----- FONTS -----
-// - Roboto Font
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url("../assets/fonts/roboto/Roboto-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url("../assets/fonts/roboto/Roboto-Bold.ttf");
-}
-
-.font-family-roboto-r {
-  font-family: "Roboto-Regular";
-}
-
-.font-family-roboto-b {
-  font-family: "Roboto-Bold";
-}
-
-// - Quicksand Font
-@font-face {
-  font-family: "Quicksand-Light";
-  src: url("../assets/fonts/quicksand/Quicksand-Light.otf");
-}
-
-@font-face {
-  font-family: "Quicksand-Regular";
-  src: url("../assets/fonts/quicksand/Quicksand-Regular.otf");
-}
-
-@font-face {
-  font-family: "Quicksand-Bold";
-  src: url("../assets/fonts/quicksand/Quicksand-Bold.otf");
-}
-
-.font-family-quicksand-l {
-  font-family: "Quicksand-Light";
-}
-
-.font-family-quicksand-r {
-  font-family: "Quicksand-Regular";
-}
-
-.font-family-quicksand-b {
-  font-family: "Quicksand-Bold";
-}
-
-// ----- FONT-SIZE -----
-.font-size-150 {
-  font-size: 1.5rem;
-}
-
-.font-size-140 {
-  font-size: 1.4rem;
-}
-
-.font-size-130 {
-  font-size: 1.3rem;
-}
-
-.font-size-120 {
-  font-size: 1.2rem;
-}
-
-.font-size-95 {
-  font-size: 0.95rem;
-}
-
-.font-size-90 {
-  font-size: 0.9rem;
-}
-
-.font-size-80 {
-  font-size: 0.8rem;
-}
-
-// ----- BACKGROUND COLOR -----
-.bg-default,
-.btn-default {
-  background-color: $default-color;
-}
-
-.btn-default:hover {
-  background-color: $default-color-dark;
-}
-
-.bg-body {
-  background-color: $bg-color;
-}
-
-// ----- TEXT COLOR -----
-.text-color-default,
-.input-default,
-.input-default:focus,
-.input-default::placeholder {
-  color: $default-color !important;
-}
-
-.nav-link {
-  color: #6c757d !important;
-}
-
-.nav-link:hover {
-  color: $default-color !important;
-}
-
-// ----- FILL COLOR -----
-.fill-default {
-  fill: $default-color;
-}
-
-.fill-secondary {
-  fill: #6c757d;
-}
-
-// ----- BORDER COLOR -----
-.border-color-default,
-.btn-default,
-.input-default {
-  border-color: $default-color !important;
-}
-
-.btn-default:hover {
-  border-color: $default-color-dark;
-}
-
-// ----- BORDER RADIUS -----
-.btn-rounded,
-.input-rounded,
-.btn-round-l,
-.input-round-l {
-  border-radius: 30px;
-}
-
-// ----- BORDER WIDTH -----
-.border-w2,
-.btn-default,
-.input-round-l {
-  border-width: 2px;
-}
-
-// ----- PADDING -----
-.btn-large,
-.btn-round-l {
-  padding: 8px 16px;
-}
-
-.input-large,
-.input-round-l {
-  padding: 20px 16px;
-}
+@import "./color.scss";
+@import "./font.scss";
+@import "./border.scss";
+@import "./aboutCard.scss";
+@import "./scrollDownBadge.scss";
+@import "./largePadding.scss";
 
 .d-flex-center,
 .scroll-down-badge {
@@ -169,25 +16,6 @@ $bg-color: #f6e5c4;
   justify-content: center;
 }
 
-.scroll-down-badge {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  margin-top: -25px;
-  border-radius: 50%;
-  border: 1px solid #dcdcdc;
-  fill: #dcdcdc;
-}
-
-.about-card {
-  width: 300px;
-  height: 250px;
-  padding: 20px;
-  margin: 20px;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+.mini-shadow {
   box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.1);
 }
