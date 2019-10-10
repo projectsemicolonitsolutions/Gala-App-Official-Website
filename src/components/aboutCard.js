@@ -1,8 +1,10 @@
 import React from "react";
 
-const AboutCard = ({ title, content, className }) => {
+const AboutCard = ({ title, content, className, shadow }) => {
   return (
-    <article className={`about-card ${className || ``}`}>
+    <article
+      className={`about-card ${shadow ? `mini-shadow` : ``} ${className || ``}`}
+    >
       <header>
         <h6 className="font-family-roboto-r">{title}</h6>
       </header>
