@@ -14,33 +14,31 @@ const About = () => {
 
       <Container className="py-5">
         <Row className="py-5 justify-content-center">
-          <Col lg="4" md="6" xs="12" className="d-flex justify-content-center">
+          <Col lg="4" md="6" xs="12">
             <AboutCard
               title="Discover"
               content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore"
-              className="text-center rounded"
+              shadow
+              className="text-center rounded m-3"
             />
           </Col>
-          <Col
-            lg="4"
-            md="6"
-            xs="12"
-            className="d-flex justify-content-center pt-lg-5"
-          >
+          <Col lg="4" md="6" xs="12" className="pt-lg-5">
             <AboutCard
               title="Plan"
               content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore"
-              className="text-center rounded mt-lg-5"
+              shadow
+              className="text-center rounded m-3 mt-lg-5"
             />
           </Col>
-          <Col lg="4" md="6" xs="12" className="d-flex justify-content-center">
+          <Col lg="4" md="6" xs="12">
             <AboutCard
               title="Share"
               content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                       sed do eiusmod tempor incididunt ut labore et dolore"
-              className="text-center rounded"
+              shadow
+              className="text-center rounded m-3"
             />
           </Col>
         </Row>
