@@ -55,7 +55,7 @@ class Header extends Component {
                   <NavLink href="/faqs">faqs</NavLink>
                 </NavItem>
               </Nav>
-              <Button className="btn-default border-0 btn-rounded text-uppercase font-family-roboto-r">
+              <Button className="btn-round-l btn-default text-uppercase font-family-roboto-r">
                 Become a Partner
               </Button>
             </Collapse>
