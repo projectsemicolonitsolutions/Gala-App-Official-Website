@@ -1,0 +1,76 @@
+// ----- FONTS -----
+// - Roboto Font
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../assets/fonts/roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../assets/fonts/roboto/Roboto-Bold.ttf");
+}
+
+.font-family-roboto-r {
+  font-family: "Roboto-Regular";
+}
+
+.font-family-roboto-b {
+  font-family: "Roboto-Bold";
+}
+
+// - Quicksand Font
+@font-face {
+  font-family: "Quicksand-Light";
+  src: url("../assets/fonts/quicksand/Quicksand-Light.otf");
+}
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("../assets/fonts/quicksand/Quicksand-Regular.otf");
+}
+
+@font-face {
+  font-family: "Quicksand-Bold";
+  src: url("../assets/fonts/quicksand/Quicksand-Bold.otf");
+}
+
+.font-family-quicksand-l {
+  font-family: "Quicksand-Light";
+}
+
+.font-family-quicksand-r {
+  font-family: "Quicksand-Regular";
+}
+
+.font-family-quicksand-b {
+  font-family: "Quicksand-Bold";
+}
+
+// ----- FONT-SIZE -----
+.font-size-150 {
+  font-size: 1.5rem;
+}
+
+.font-size-140 {
+  font-size: 1.4rem;
+}
+
+.font-size-130 {
+  font-size: 1.3rem;
+}
+
+.font-size-120 {
+  font-size: 1.2rem;
+}
+
+.font-size-95 {
+  font-size: 0.95rem;
+}
+
+.font-size-90 {
+  font-size: 0.9rem;
+}
+
+.font-size-80 {
+  font-size: 0.8rem;
+}
