@@ -52,10 +52,10 @@ class Header extends Component {
                 navbar
               >
                 <NavItem>
-                  <NavLink href="/">Home</NavLink>
+                  <NavLink href="/#">Home</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/features">Features</NavLink>
+                  <NavLink href="/#features">Features</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="/blog">Blog</NavLink>
