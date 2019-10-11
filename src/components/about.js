@@ -6,11 +6,13 @@ import { ReactComponent as ArrowDown } from "../assets/svg/arrow-down.svg";
 const About = () => {
   return (
     <section id="about" className="d-flex flex-column align-items-center">
-      <a href="#about">
-        <section className="scroll-down-badge bg-white">
-          <ArrowDown width="20" />
-        </section>
-      </a>
+      <div style={{ width: "50px", position: "absolute", marginTop: "-25px" }}>
+        <a href="#about">
+          <section className="scroll-down-badge bg-white">
+            <ArrowDown width="20" />
+          </section>
+        </a>
+      </div>
 
       <Container className="py-5">
         <Row className="py-5 justify-content-center">
