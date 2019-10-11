@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { ReactComponent as BrandLogo } from "../assets/svg/logo.svg";
+import { ReactComponent as BrandTitle } from "../assets/svg/title.svg";
 import {
   Collapse,
   Navbar,
@@ -7,11 +9,8 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Container
+  Container,
+  Button
 } from "reactstrap";
 
 class Header extends Component {
@@ -31,32 +30,34 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <Navbar color="light" light expand="md">
+        <Navbar className="bg-body" light expand="md">
           <Container>
-            <NavbarBrand href="/">reactstrap</NavbarBrand>
+            <NavbarBrand className="d-flex align-items-center" href="/">
+              <BrandLogo className="fill-default" height="50" />
+              <BrandTitle className="ml-3 fill-secondary" height="30" />
+            </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
+              <Nav
+                className="ml-auto mr-3 font-family-roboto-b text-uppercase"
+                navbar
+              >
                 <NavItem>
-                  <NavLink href="/components/">Components</NavLink>
+                  <NavLink href="/">Home</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">
-                    GitHub
-                  </NavLink>
+                  <NavLink href="/features">Features</NavLink>
                 </NavItem>
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
-                    Options
-                  </DropdownToggle>
-                  <DropdownMenu right>
-                    <DropdownItem>Option 1</DropdownItem>
-                    <DropdownItem>Option 2</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>Reset</DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
+                <NavItem>
+                  <NavLink href="/blog">Blog</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/faqs">faqs</NavLink>
+                </NavItem>
               </Nav>
+              <Button className="btn-default border-0 btn-rounded text-uppercase font-family-roboto-r">
+                Become a Partner
+              </Button>
             </Collapse>
           </Container>
         </Navbar>
