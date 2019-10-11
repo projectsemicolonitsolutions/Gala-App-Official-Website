@@ -2,7 +2,7 @@
 $default-color: #f56991;
 $default-color-dark: #e95780;
 $blog-color-dark: #dd4b39;
-$blog-color-light: #dd4b39;
+$blog-color-light: #ff2e58;
 $bg-color: #f6e5c4;
 
 // ----- BACKGROUND COLOR -----
@@ -33,6 +33,16 @@ $bg-color: #f6e5c4;
 
 .nav-link:hover {
   color: $default-color !important;
+}
+
+.text-gradient-red {
+  color: $blog-color-dark;
+  background: -webkit-linear-gradient($blog-color-dark, $blog-color-light);
+  background: linear-gradient($blog-color-dark, $blog-color-light);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 // ----- FILL COLOR -----
