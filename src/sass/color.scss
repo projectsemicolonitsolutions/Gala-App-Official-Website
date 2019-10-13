@@ -1,6 +1,7 @@
 // ----- COLOR VARIABLES -----
 $default-color: #f56991;
 $default-color-dark: #e95780;
+$blog-color: #f4374e;
 $blog-color-dark: #dd4b39;
 $blog-color-light: #ff2e58;
 $bg-color: #f6e5c4;
@@ -45,6 +46,9 @@ $bg-color: #f6e5c4;
   color: transparent;
 }
 
+.blog-color {
+  color: $blog-color;
+}
 // ----- FILL COLOR -----
 .fill-default {
   fill: $default-color;
