@@ -3,7 +3,7 @@ import React from "react";
 const TutCard = ({ title, content, shadow, className }) => {
   return (
     <article
-      className={`about-card ${shadow ? `mini-shadow` : ``} ${className || ``}`}
+      className={`card1 ${shadow ? `mini-shadow` : ``} ${className || ``}`}
     >
       <section className="wh-80px rounded-circle mx-auto mb-4 bg-white"></section>
       <header>
