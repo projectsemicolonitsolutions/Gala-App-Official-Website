@@ -7,6 +7,7 @@ import Overview from "./components/overview";
 import Tutorial from "./components/tutorial";
 import Features from "./components/features";
 import LatestBlog from "./components/latestBlog";
+import About from "./components/about";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Tutorial />
       <Features />
       <LatestBlog />
+      <About />
     </div>
   );
 }
