@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.68 74.02"><title>capsule</title><g id="_1" data-name="1" style="isolation:isolate"><g id="_1-2" data-name="1"><path d="M60.38,12.41a15,15,0,0,0-21.21.4l-34.68,36A15,15,0,1,0,26.1,69.64l34.68-36A15,15,0,0,0,60.38,12.41Z" transform="translate(-0.3 -0.22)" style="fill:#edf5ff;fill-rule:evenodd"/></g></g><g id="_2" data-name="2" style="isolation:isolate"><g id="_2-2" data-name="2"><path d="M103.38,4.41a15,15,0,0,0-21.21.4l-34.68,36A15,15,0,0,0,69.1,61.64l34.68-36A15,15,0,0,0,103.38,4.41Z" transform="translate(-0.3 -0.22)" style="fill:#ebf9ff;fill-rule:evenodd"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.68 74.02">
+    <title>capsule</title>
+    <g id="_1" data-name="1" style="isolation:isolate">
+        <g id="_1-2" data-name="1">
+            <path 
+                d="M60.38,12.41a15,15,0,0,0-21.21.4l-34.68,36A15,15,0,1,0,26.1,69.64l34.68-36A15,15,0,0,0,60.38,12.41Z" 
+                transform="translate(-0.3 -0.22)" 
+                style="fill:#edf5ff;fill-rule:evenodd"
+            />
+        </g>
+    </g>
+    <g id="_2" data-name="2" style="isolation:isolate">
+        <g id="_2-2" data-name="2">
+            <path 
+                d="M103.38,4.41a15,15,0,0,0-21.21.4l-34.68,36A15,15,0,0,0,69.1,61.64l34.68-36A15,15,0,0,0,103.38,4.41Z" 
+                transform="translate(-0.3 -0.22)" 
+                style="fill:#ebf9ff;fill-rule:evenodd"
+            />
+        </g>
+    </g>
+</svg>
