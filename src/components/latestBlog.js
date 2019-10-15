@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import HeaderBg from "./headerBg";
+import HeaderBg from "./shared-components/headerBg";
 import bgCapsule from "../assets/svg/capsule.svg";
-import Blog from "./blog";
-import BlogAside from "./blogAside";
+import Blog from "./shared-components/blog";
+import BlogAside from "./shared-components/blogAside";
 
 const LatestBlog = () => {
   return (

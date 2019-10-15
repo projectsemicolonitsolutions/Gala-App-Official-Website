@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as RightArrow } from "../assets/svg/arrow-right.svg";
+import { ReactComponent as RightArrow } from "../../assets/svg/arrow-right.svg";
 
 const Blog = ({ thumbnail, title, content, slug, className }) => {
   return (
@@ -24,7 +24,7 @@ const Blog = ({ thumbnail, title, content, slug, className }) => {
           <p className="blog-color font-family-quicksand-book font-size-80 m-0 mr-1">
             Continue Reading
           </p>
-          <RightArrow width="10" className="color-primary" />
+          <RightArrow width="12" className="color-primary" />
         </section>
       </a>
     </article>

@@ -8,6 +8,7 @@ import Tutorial from "./components/tutorial";
 import Features from "./components/features";
 import LatestBlog from "./components/latestBlog";
 import About from "./components/about";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Features />
       <LatestBlog />
       <About />
+      <Footer />
     </div>
   );
 }
