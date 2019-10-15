@@ -6,6 +6,7 @@ import Hero from "./components/hero";
 import About from "./components/about";
 import Tutorial from "./components/tutorial";
 import Features from "./components/features";
+import LatestBlog from "./components/latestBlog";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Tutorial />
       <Features />
+      <LatestBlog />
     </div>
   );
 }
