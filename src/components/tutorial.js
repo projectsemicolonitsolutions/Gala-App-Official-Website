@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import TutCard from "./tutCard";
+import TutCard from "./shared-components/tutCard";
 
 const Tutorial = () => {
   return (

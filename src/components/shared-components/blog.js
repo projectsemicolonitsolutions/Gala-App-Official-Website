@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as RightArrow } from "../assets/svg/arrow-right.svg";
+import { ReactComponent as RightArrow } from "../../assets/svg/arrow-right.svg";
 
 const Blog = ({ thumbnail, title, content, slug, className }) => {
   return (

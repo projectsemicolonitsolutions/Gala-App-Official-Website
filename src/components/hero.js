@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
-import Subcribe from "./subscription";
+import Subcribe from "./shared-components/subscription";
 import galaMap300w from "../assets/images/gala-map-300w.png";
 import galaMap600w from "../assets/images/gala-map-600w.png";
 import galaMap1500w from "../assets/images/gala-map-1500w.png";
