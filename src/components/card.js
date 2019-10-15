@@ -1,9 +1,9 @@
 import React from "react";
 
-const AboutCard = ({ title, content, className, shadow }) => {
+const Card = ({ title, content, className, shadow }) => {
   return (
     <article
-      className={`about-card ${shadow ? `mini-shadow` : ``} ${className || ``}`}
+      className={`card1 ${shadow ? `mini-shadow` : ``} ${className || ``}`}
     >
       <header>
         <h6 className="font-family-roboto-r">{title}</h6>
@@ -15,4 +15,4 @@ const AboutCard = ({ title, content, className, shadow }) => {
   );
 };
 
-export default AboutCard;
+export default Card;

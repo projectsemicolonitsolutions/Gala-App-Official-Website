@@ -3,20 +3,22 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./sass/main.scss";
 import Header from "./components/header";
 import Hero from "./components/hero";
-import About from "./components/about";
+import Overview from "./components/overview";
 import Tutorial from "./components/tutorial";
 import Features from "./components/features";
 import LatestBlog from "./components/latestBlog";
+import About from "./components/about";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Hero />
-      <About />
+      <Overview />
       <Tutorial />
       <Features />
       <LatestBlog />
+      <About />
     </div>
   );
 }
