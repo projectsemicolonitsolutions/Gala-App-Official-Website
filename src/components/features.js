@@ -44,7 +44,7 @@ const Features = () => {
               <img
                 src={ImgPhone300w}
                 alt="phone"
-                srcset={`${ImgPhone300w} 600w, ${ImgPhone} 1000w`}
+                srcSet={`${ImgPhone300w} 600w, ${ImgPhone} 1000w`}
                 width="100%"
               />
             </Col>
