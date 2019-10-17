@@ -52,7 +52,7 @@ const About = () => {
               <img
                 src={mobileDevices300}
                 alt="mobile-devices"
-                srcset={`${mobileDevices300} 300w, ${mobileDevices600} 600w, ${mobileDevices900} 900w,`}
+                srcSet={`${mobileDevices300} 300w, ${mobileDevices600} 600w, ${mobileDevices900} 900w,`}
                 width="100%"
               />
             </Row>
