@@ -1,11 +1,11 @@
-import React from "react";
-import { Row, Col } from "reactstrap";
-import Subcribe from "./shared-components/subscription";
-import galaMap300w from "../assets/images/gala-map-300w.png";
-import galaMap600w from "../assets/images/gala-map-600w.png";
-import galaMap1500w from "../assets/images/gala-map-1500w.png";
-import galaMap1800w from "../assets/images/gala-map-1800w.png";
-import galaMap2000w from "../assets/images/gala-map-2000w.png";
+import React from "react"
+import { Row, Col } from "reactstrap"
+import Subcribe from "./shared-components/subscription"
+import GalaMap300w from "../images/gala-map-300w.png"
+import GalaMap600w from "../images/gala-map-600w.png"
+import GalaMap1500w from "../images/gala-map-1500w.png"
+import GalaMap1800w from "../images/gala-map-1800w.png"
+import GalaMap2000w from "../images/gala-map-2000w.png"
 
 const Hero = () => {
   return (
@@ -36,15 +36,15 @@ const Hero = () => {
         </Col>
         <Col lg="6" className="d-none d-lg-flex">
           <img
-            src={galaMap300w}
-            srcSet={`${galaMap300w} 300w, ${galaMap600w} 600w, ${galaMap1500w} 1500w, ${galaMap1800w} 1800w, ${galaMap2000w} 2000w`}
+            src={GalaMap300w}
+            srcSet={`${GalaMap300w} 300w, ${GalaMap600w} 600w, ${GalaMap1500w} 1500w, ${GalaMap1800w} 1800w, ${GalaMap2000w} 2000w`}
             alt="gala map"
             width="100%"
           />
         </Col>
       </Row>
     </main>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

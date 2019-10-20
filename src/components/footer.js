@@ -1,10 +1,10 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
-import { ReactComponent as BrandLogo } from "../assets/svg/logo.svg";
-import { ReactComponent as BrandTitle } from "../assets/svg/title.svg";
-import { ReactComponent as Facebook } from "../assets/svg/facebook-f.svg";
-import { ReactComponent as Twitter } from "../assets/svg/twitter.svg";
-import { ReactComponent as Youtube } from "../assets/svg/youtube.svg";
+import React from "react"
+import { Container, Row, Col } from "reactstrap"
+import BrandLogo from "../assets/svg/logo.svg"
+import BrandTitle from "../assets/svg/title.svg"
+import Facebook from "../assets/svg/facebook-f.svg"
+import Twitter from "../assets/svg/twitter.svg"
+import Youtube from "../assets/svg/youtube.svg"
 
 const Footer = () => {
   return (
@@ -100,7 +100,7 @@ const Footer = () => {
         </Row>
       </Container>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

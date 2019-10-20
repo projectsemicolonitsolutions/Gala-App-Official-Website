@@ -1,9 +1,9 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
-import ImgPhone from "../assets/images/phone.png";
-import ImgPhone300w from "../assets/images/phone-300w.png";
-import featureBg from "../assets/images/feature-bg.png";
-import shapeBg from "../assets/images/shape.png";
+import React from "react"
+import { Container, Row, Col } from "reactstrap"
+import ImgPhone from "../images/phone.png"
+import ImgPhone300w from "../images/phone-300w.png"
+import featureBg from "../images/feature-bg.png"
+import shapeBg from "../images/shape.png"
 
 const Features = () => {
   return (
@@ -14,7 +14,7 @@ const Features = () => {
         backgroundImage: `url(${shapeBg})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "center"
+        backgroundPosition: "center",
       }}
     >
       <section
@@ -22,7 +22,7 @@ const Features = () => {
           backgroundImage: `url(${featureBg})`,
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "center"
+          backgroundPosition: "center",
         }}
       >
         <Container>
@@ -57,7 +57,7 @@ const Features = () => {
         </Container>
       </section>
     </section>
-  );
-};
+  )
+}
 
-export default Features;
+export default Features

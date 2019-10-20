@@ -1,7 +1,7 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
-import Card from "./shared-components/card";
-import { ReactComponent as ArrowDown } from "../assets/svg/arrow-down.svg";
+import React from "react"
+import { Container, Row, Col } from "reactstrap"
+import Card from "./shared-components/card"
+import ArrowDown from "../assets/svg/arrow-down.svg"
 
 const Overview = () => {
   return (
@@ -46,7 +46,7 @@ const Overview = () => {
         </Row>
       </Container>
     </section>
-  );
-};
+  )
+}
 
-export default Overview;
+export default Overview
