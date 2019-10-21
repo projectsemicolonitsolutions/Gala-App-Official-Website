@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { ReactComponent as BrandLogo } from "../assets/svg/logo.svg";
-import { ReactComponent as BrandTitle } from "../assets/svg/title.svg";
+import React, { Component } from "react"
+import BrandLogo from "../assets/svg/logo.svg"
+import BrandTitle from "../assets/svg/title.svg"
 import {
   Collapse,
   Navbar,
@@ -10,33 +10,40 @@ import {
   NavItem,
   NavLink,
   Container,
-  Button
-} from "reactstrap";
+  Button,
+} from "reactstrap"
 
 class Header extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.toggle = this.toggle.bind(this);
+    this.toggle = this.toggle.bind(this)
     this.state = {
-      isOpen: false
-    };
+      isOpen: false,
+      prevScollpos: "",
+    }
   }
   toggle() {
     this.setState({
-      isOpen: !this.state.isOpen
-    });
+      isOpen: !this.state.isOpen,
+    })
+  }
+
+  componentDidMount() {
+    this.handleWindowScroll()
+  }
+
+  handleWindowScroll = () => {
+    window.onscroll = () => {
+      const currentScrollPos = window.pageYOffset
+      this.state.prevScrollpos > currentScrollPos
+        ? (document.getElementById("navbar").style.top = "0")
+        : (document.getElementById("navbar").style.top = "-76px")
+
+      this.setState({ prevScrollpos: currentScrollPos })
+    }
   }
   render() {
-    let prevScrollpos = window.pageYOffset;
-    window.onscroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      prevScrollpos > currentScrollPos
-        ? (document.getElementById("navbar").style.top = "0")
-        : (document.getElementById("navbar").style.top = "-76px");
-
-      prevScrollpos = currentScrollPos;
-    };
     return (
       <header>
         <Navbar id="navbar" className="bg-body" fixed="top" light expand="md">
@@ -71,7 +78,7 @@ class Header extends Component {
           </Container>
         </Navbar>
       </header>
-    );
+    )
   }
 }
-export default Header;
+export default Header

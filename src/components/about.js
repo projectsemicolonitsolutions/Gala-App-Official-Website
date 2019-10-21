@@ -1,10 +1,10 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
-import { ReactComponent as BrandLogo } from "../assets/svg/logo.svg";
-import Subcribe from "./shared-components/subscription";
-import mobileDevices300 from "../assets/images/device300w.png";
-import mobileDevices600 from "../assets/images/device600w.png";
-import mobileDevices900 from "../assets/images/device900w.png";
+import React from "react"
+import { Container, Row, Col } from "reactstrap"
+import BrandLogo from "../assets/svg/logo.svg"
+import Subcribe from "./shared-components/subscription"
+import mobileDevices300 from "../images/device300w.png"
+import mobileDevices600 from "../images/device600w.png"
+import mobileDevices900 from "../images/device900w.png"
 
 const About = () => {
   return (
@@ -60,7 +60,7 @@ const About = () => {
         </Row>
       </Container>
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About

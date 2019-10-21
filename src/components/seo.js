@@ -1,9 +1,9 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React from "react"
+import { Helmet } from "react-helmet"
 
-import logo512 from "../assets/meta/logo512.png";
-import logo192 from "../assets/meta/logo192.png";
-import favicon from "../assets/meta/favicon.ico";
+import logo512 from "../images/meta/logo512.png"
+import logo192 from "../images/meta/logo192.png"
+import favicon from "../images/meta/favicon.ico"
 
 const Seo = ({ title }) => {
   return (
@@ -17,7 +17,7 @@ const Seo = ({ title }) => {
         <link rel="icon" href={favicon} />
       </Helmet>
     </>
-  );
-};
+  )
+}
 
-export default Seo;
+export default Seo
