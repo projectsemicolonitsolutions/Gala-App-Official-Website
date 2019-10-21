@@ -1,7 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from "reactstrap"
-import ImgPhone from "../images/phone.png"
-import ImgPhone300w from "../images/phone-300w.png"
+import ImgFeature from "./imgFeature"
 import featureBg from "../images/feature-bg.png"
 import shapeBg from "../images/shape.png"
 
@@ -39,14 +38,9 @@ const Features = () => {
               </p>
             </Col>
           </Row>
-          <Row className="flex-md-row flex-sm-column-reverse pt-5">
+          <Row className="flex-md-row flex-column-reverse pt-5">
             <Col md="6" xs="12">
-              <img
-                src={ImgPhone300w}
-                alt="phone"
-                srcSet={`${ImgPhone300w} 600w, ${ImgPhone} 1000w`}
-                width="100%"
-              />
+              <ImgFeature />
             </Col>
             <Col md="6" xs="12" className="d-flex-center">
               <h2 className="font-family-quicksand-b text-gradient-red">
