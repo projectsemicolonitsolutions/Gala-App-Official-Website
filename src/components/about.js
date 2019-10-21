@@ -2,9 +2,7 @@ import React from "react"
 import { Container, Row, Col } from "reactstrap"
 import BrandLogo from "../assets/svg/logo.svg"
 import Subcribe from "./shared-components/subscription"
-import mobileDevices300 from "../images/device300w.png"
-import mobileDevices600 from "../images/device600w.png"
-import mobileDevices900 from "../images/device900w.png"
+import ImgDevices from "./imgDevices"
 
 const About = () => {
   return (
@@ -49,12 +47,9 @@ const About = () => {
               <Col lg="7" md="9" xs="12">
                 <Subcribe title="Notify me" />
               </Col>
-              <img
-                src={mobileDevices300}
-                alt="mobile-devices"
-                srcSet={`${mobileDevices300} 300w, ${mobileDevices600} 600w, ${mobileDevices900} 900w,`}
-                width="100%"
-              />
+              <Col xs="12">
+                <ImgDevices />
+              </Col>
             </Row>
           </Col>
         </Row>
