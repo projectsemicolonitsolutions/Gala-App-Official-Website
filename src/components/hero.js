@@ -1,11 +1,7 @@
 import React from "react"
 import { Row, Col } from "reactstrap"
 import Subcribe from "./shared-components/subscription"
-import GalaMap300w from "../images/gala-map-300w.png"
-import GalaMap600w from "../images/gala-map-600w.png"
-import GalaMap1500w from "../images/gala-map-1500w.png"
-import GalaMap1800w from "../images/gala-map-1800w.png"
-import GalaMap2000w from "../images/gala-map-2000w.png"
+import ImgMap from "./imgMap"
 
 const Hero = () => {
   return (
@@ -35,12 +31,7 @@ const Hero = () => {
           </section>
         </Col>
         <Col lg="6" className="d-none d-lg-flex">
-          <img
-            src={GalaMap300w}
-            srcSet={`${GalaMap300w} 300w, ${GalaMap600w} 600w, ${GalaMap1500w} 1500w, ${GalaMap1800w} 1800w, ${GalaMap2000w} 2000w`}
-            alt="gala map"
-            width="100%"
-          />
+          <ImgMap />
         </Col>
       </Row>
     </main>
