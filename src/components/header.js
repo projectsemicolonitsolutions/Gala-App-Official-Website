@@ -20,6 +20,7 @@ class Header extends Component {
     this.toggle = this.toggle.bind(this)
     this.state = {
       isOpen: false,
+      prevScollpos: "",
     }
   }
   toggle() {
@@ -27,16 +28,22 @@ class Header extends Component {
       isOpen: !this.state.isOpen,
     })
   }
-  render() {
-    let prevScrollpos = window.pageYOffset
+
+  componentDidMount() {
+    this.handleWindowScroll()
+  }
+
+  handleWindowScroll = () => {
     window.onscroll = () => {
       const currentScrollPos = window.pageYOffset
-      prevScrollpos > currentScrollPos
+      this.state.prevScrollpos > currentScrollPos
         ? (document.getElementById("navbar").style.top = "0")
         : (document.getElementById("navbar").style.top = "-76px")
 
-      prevScrollpos = currentScrollPos
+      this.setState({ prevScrollpos: currentScrollPos })
     }
+  }
+  render() {
     return (
       <header>
         <Navbar id="navbar" className="bg-body" fixed="top" light expand="md">
