@@ -5,8 +5,27 @@ import BrandTitle from "../assets/svg/title.svg"
 import Facebook from "../assets/svg/facebook-f.svg"
 import Twitter from "../assets/svg/twitter.svg"
 import Youtube from "../assets/svg/youtube.svg"
+import { useStaticQuery, graphql } from "gatsby"
 
 const Footer = () => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            author
+            social {
+              facebook
+              twitter
+              youtube
+            }
+          }
+        }
+      }
+    `
+  )
+
+  const { author, social } = site.siteMetadata
   return (
     <footer className="pt-5 bg-default text-white">
       <Container>
@@ -45,7 +64,7 @@ const Footer = () => {
                 xs="12"
                 className="font-size-90 font-family-quicksand-book text-white font-size-90 mt-2"
               >
-                © 2019 Copyright, All Rights Reserved by Project Semicolon
+                © 2019 Copyright, All Rights Reserved by {author}
               </Col>
               <Col
                 lg="6"
@@ -70,21 +89,36 @@ const Footer = () => {
                   </li>
                   <li>
                     <section className="d-flex justify-content-between">
-                      <a href="/" className="text-white">
+                      <a
+                        href={social.facebook}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white"
+                      >
                         <Facebook
                           height="20px"
                           width="20px"
                           className="fill-white mr-2"
                         />
                       </a>
-                      <a href="/" className="text-white">
+                      <a
+                        href={social.twitter}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white"
+                      >
                         <Twitter
                           height="20px"
                           width="20px"
                           className="fill-white mr-2"
                         />
                       </a>
-                      <a href="/" className="text-white">
+                      <a
+                        href={social.youtube}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white"
+                      >
                         <Youtube
                           height="20px"
                           width="20px"

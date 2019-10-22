@@ -8,11 +8,13 @@ import Features from "../components/features"
 import LatestBlog from "../components/latestBlog"
 import About from "../components/about"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 const IndexPage = () => {
   return (
     <>
-      <Layout title="Home">
+      <Layout>
+        <Seo pageTitle="Home" />
         <Hero />
         <Overview />
         <Tutorial />

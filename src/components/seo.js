@@ -1,20 +1,32 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { useStaticQuery, graphql } from "gatsby"
 
-import logo512 from "../images/meta/logo512.png"
-import logo192 from "../images/meta/logo192.png"
-import favicon from "../images/meta/favicon.ico"
+const Seo = ({ pageTitle, description }) => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+            author
+          }
+        }
+      }
+    `
+  )
 
-const Seo = ({ title }) => {
+  const metaDescription = description || site.siteMetadata.description
+  const { title, author } = site.siteMetadata
+
   return (
     <>
       <Helmet>
-        <title>{`Gala App${title ? ` | ${title}` : ``}`}</title>
+        <title>{`${pageTitle ? `${pageTitle} | ` : ``}${title}`}</title>
+        <meta name="description" content={metaDescription} />
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="Project Semicolon" />
-        <link rel="apple-touch-icon" sizes="512x512" href={logo512} />
-        <link rel="apple-touch-icon" sizes="192x192" href={logo192} />
-        <link rel="icon" href={favicon} />
+        <meta name="author" content={author} />
       </Helmet>
     </>
   )
