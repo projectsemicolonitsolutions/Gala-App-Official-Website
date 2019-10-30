@@ -7,7 +7,7 @@ const FeatureBlogs = ({ blogs }) => {
     <section className="feature-blogs">
       <Row className="m-0 mt-5 mb-3 pt-5 px-3 flex-nowrap overflow-auto">
         {blogs.map(blog => (
-          <Col md="4" sm="6" xs="12" className="">
+          <Col md="4" sm="6" xs="12" key={blog.id}>
             <FeatureCard featBlog={blog} />
           </Col>
         ))}
