@@ -55,6 +55,43 @@
   font-family: "Quicksand-Book";
 }
 
+// ----- Oden-Rounded -----
+@font-face {
+  font-family: "Odin-Rounded";
+  src: url("../assets/fonts/oden-rounded/Odin Rounded - Regular.otf");
+}
+
+@font-face {
+  font-family: "Odin-Rounded-Bold";
+  src: url("../assets/fonts/oden-rounded/Odin Rounded - Bold.otf");
+}
+
+@font-face {
+  font-family: "Odin-Rounded-Bold-Italic";
+  src: url("../assets/fonts/oden-rounded/Odin Rounded - Bold Italic.otf");
+}
+
+@font-face {
+  font-family: "Odin-Rounded-Light";
+  src: url("../assets/fonts/oden-rounded/Odin Rounded - Light.otf");
+}
+
+.font-family-oden-r {
+  font-family: "Odin-Rounded";
+}
+
+.font-family-oden-r-b {
+  font-family: "Odin-Rounded-Bold";
+}
+
+.font-family-oden-r-i {
+  font-family: "Odin-Rounded-Bold-Italic";
+}
+
+.font-family-oden-r-l {
+  font-family: "Odin-Rounded-Light";
+}
+
 // ----- FONT-SIZE -----
 .font-size-150 {
   font-size: 1.5rem;
@@ -82,4 +119,8 @@
 
 .font-size-80 {
   font-size: 0.8rem;
+}
+
+.font-size-70 {
+  font-size: 0.7rem;
 }
