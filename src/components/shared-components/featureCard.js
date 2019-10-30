@@ -21,7 +21,8 @@ const FeatureCard = ({ featBlog }) => {
     <div
       className="m-1 w-100 bg-cover bg-norepeat bg-center"
       style={{
-        backgroundImage: `url(${imgQuery.image.childImageSharp.fluid.src})`,
+        backgroundImage: `url(${imgQuery.image.childImageSharp.fluid.src ||
+          img})`,
       }}
     >
       <Link to={`/${slug || ``}`} className="text-decoration-none">
