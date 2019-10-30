@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 import FeatureBlogs from "../components/featureBlogs"
 
 const BlogPage = ({ data }) => {
-  const featuredBlogs = data.allBlogsJson.nodes
+  const featuredBlogs = data.featured.nodes
   return (
     <>
       <Layout>
@@ -18,8 +18,9 @@ const BlogPage = ({ data }) => {
 
 export const blogsQuery = graphql`
   query {
-    allBlogsJson(filter: { featured: { eq: true } }) {
+    featured: allBlogsJson(filter: { featured: { eq: true } }) {
       nodes {
+        id
         category
         title
         description
