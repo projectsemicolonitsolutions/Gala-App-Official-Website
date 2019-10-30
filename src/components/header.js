@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "gatsby"
 import BrandLogo from "../assets/svg/logo.svg"
 import BrandTitle from "../assets/svg/title.svg"
 import {
@@ -59,13 +60,17 @@ class Header extends Component {
                 navbar
               >
                 <NavItem>
-                  <NavLink href="/#">Home</NavLink>
+                  <Link to="/#" className="nav-link">
+                    Home
+                  </Link>
                 </NavItem>
                 <NavItem>
                   <NavLink href="/#features">Features</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/blog">Blog</NavLink>
+                  <Link to="/blog/#" className="nav-link">
+                    Blog
+                  </Link>
                 </NavItem>
                 <NavItem>
                   <NavLink href="/faqs">faqs</NavLink>
