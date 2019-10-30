@@ -16,7 +16,12 @@ const FeatureCard = ({ featBlog }) => {
       }
     }
   `)
-
+  const toKababCase = stringCase =>
+    stringCase
+      .replace(/\s/g, "-")
+      .replace(/,/g, "")
+      .replace(/!/g, "")
+      .toLowerCase()
   return (
     <div
       className="m-1 w-100 bg-cover bg-norepeat bg-center"
@@ -25,7 +30,10 @@ const FeatureCard = ({ featBlog }) => {
           img})`,
       }}
     >
-      <Link to={`/${slug || ``}`} className="text-decoration-none">
+      <Link
+        to={`/${slug || toKababCase(title)}`}
+        className="text-decoration-none"
+      >
         <section
           className="feat-card py-5 px-4 d-flex align-items-end"
           style={{ height: "300px", background: "rgba(50, 50, 50, 0.7)" }}
