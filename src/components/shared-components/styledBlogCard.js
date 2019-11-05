@@ -13,7 +13,7 @@ const StyledBlogCard = ({ blog }) => {
 
   const imgQuery = useStaticQuery(graphql`
     query {
-      blogImage2: file(relativePath: { eq: "img1.jpg" }) {
+      blogImage2: file(relativePath: { eq: "img2.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -57,7 +57,7 @@ const StyledBlogCard = ({ blog }) => {
           >
             <main className="font-family-oden-r pt-4 pb-2 px-3 blog-border">
               <p className="blog-category blog-color-category text-uppercase mb-2 font-family-oden-r-b">
-                {category}
+                {category.map(cat => `${cat} `)}
               </p>
               <h3 className="blog-title text-uppercase">{title}</h3>
               <p className="blog-date text-secondary font-size-70">{date}</p>

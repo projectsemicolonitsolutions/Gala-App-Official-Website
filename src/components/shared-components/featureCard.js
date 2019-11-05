@@ -40,7 +40,7 @@ const FeatureCard = ({ featBlog }) => {
         >
           <main className="blog-border py-2 px-4 w-100 text-center text-uppercase text-white">
             <p className="font-family-oden-r-b font-size-80 blog-color-category mb-1">
-              {category}
+              {category.map(cat => `${cat} `)}
             </p>
             <h3 className="font-size-120 font-family-oden-r">{title}</h3>
             <section className="d-flex justify-content-between font-size-70 font-family-oden-r-l">
