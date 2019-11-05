@@ -31,7 +31,7 @@ const FeatureCard = ({ featBlog }) => {
       }}
     >
       <Link
-        to={`/${slug || toKababCase(title)}`}
+        to={`/blog/${slug || toKababCase(title)}`}
         className="text-decoration-none"
       >
         <section
@@ -39,10 +39,10 @@ const FeatureCard = ({ featBlog }) => {
           style={{ height: "300px", background: "rgba(50, 50, 50, 0.7)" }}
         >
           <main className="blog-border py-2 px-4 w-100 text-center text-uppercase text-white">
-            <p className="font-family-oden-r-b font-size-80 blog-text-category mb-1">
+            <p className="font-family-oden-r-b font-size-80 blog-color-category mb-1">
               {category}
             </p>
-            <h3 className="font-size-120 font-family-oden-r-l">{title}</h3>
+            <h3 className="font-size-120 font-family-oden-r">{title}</h3>
             <section className="d-flex justify-content-between font-size-70 font-family-oden-r-l">
               <div className="feat-date">
                 <span className="transparent-text text-capitalize">{date}</span>
