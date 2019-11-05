@@ -10,7 +10,8 @@ import About from "../components/about"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  const latestBlog = data.latest.nodes
   return (
     <>
       <Layout>
@@ -19,11 +20,26 @@ const IndexPage = () => {
         <Overview />
         <Tutorial />
         <Features />
-        <LatestBlog />
+        <LatestBlog blogs={latestBlog} />
         <About />
       </Layout>
     </>
   )
 }
 
+export const blogsQuery = graphql`
+  query {
+    latest: allBlogsJson {
+      nodes {
+        id
+        category
+        title
+        description
+        date
+        comment
+        img
+      }
+    }
+  }
+`
 export default IndexPage
