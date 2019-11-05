@@ -1,5 +1,5 @@
-import React from "react";
-import { Row } from "reactstrap";
+import React from "react"
+import { Row } from "reactstrap"
 
 const BlogAside = ({ thumbnail, title, content, slug, className }) => {
   return (
@@ -13,10 +13,10 @@ const BlogAside = ({ thumbnail, title, content, slug, className }) => {
               width: "150px",
               minHeight: "100px",
               height: "100px",
-              backgroundImage: thumbnail,
+              backgroundImage: `url(${thumbnail})`,
               backgroundColor: "darkgray",
               backgroundSize: "cover",
-              backgroundPosition: "center"
+              backgroundPosition: "center",
             }}
           ></section>
           <section className="d-flex flex-column justify-content-between font-size-80">
@@ -30,7 +30,7 @@ const BlogAside = ({ thumbnail, title, content, slug, className }) => {
         </Row>
       </a>
     </aside>
-  );
-};
+  )
+}
 
-export default BlogAside;
+export default BlogAside
