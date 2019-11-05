@@ -18,7 +18,7 @@ const StyledBlogCard = ({ blog }) => {
           fluid {
             ...GatsbyImageSharpFluid
           }
-          fixed {
+          fixed(width: 400) {
             src
           }
         }
