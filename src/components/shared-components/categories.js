@@ -2,7 +2,7 @@ import React from "react"
 import Category from "./category"
 
 const Categories = ({ blogs }) => {
-  let categoryList = []
+  let categoryList = ["all"]
 
   blogs.map(blog =>
     blog.category.forEach(cat =>
@@ -11,7 +11,6 @@ const Categories = ({ blogs }) => {
   )
   return (
     <section className="d-flex flex-lg-column flex-row flex-wrap justify-content-center">
-      <Category title="all" items={blogs} />
       {categoryList.map(category => (
         <Category title={category} items={blogs} />
       ))}
