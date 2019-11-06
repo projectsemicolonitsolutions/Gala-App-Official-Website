@@ -6,7 +6,7 @@ const RecentBlogs = ({ blogs }) => {
   return (
     <ul className="list-unstyled">
       {recentblog.map(blog => (
-        <li>
+        <li key={blog.id}>
           <BlogAsideSM blog={blog} />
         </li>
       ))}
