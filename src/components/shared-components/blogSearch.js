@@ -4,7 +4,7 @@ import SearchSVG from "../../assets/svg/search.svg"
 const BlogSearch = () => {
   return (
     <div
-      className="blog-search w-100 d-flex flex-nowrap mt-lg-5 my-3"
+      className="blog-search w-100 d-flex flex-nowrap my-lg-5 my-3"
       style={{ maxWidth: "400px", backgroundColor: "#f4f7f6" }}
     >
       <input
