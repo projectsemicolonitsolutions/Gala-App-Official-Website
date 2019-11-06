@@ -9,7 +9,6 @@ const Categories = ({ blogs }) => {
       categoryList.includes(cat) ? null : categoryList.push(cat)
     )
   )
-  console.log(categoryList)
   return (
     <section className="d-flex flex-lg-column flex-row flex-wrap justify-content-center">
       <Category title="all" items={blogs} />
