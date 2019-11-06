@@ -26,7 +26,7 @@ const BlogPage = ({ data }) => {
             </Col>
             <Col lg="4" xs="12">
               <Aside>
-                <Row className="flex-lg-column flex-md-row-reverse flex-column">
+                <Row className="flex-lg-column flex-md-row-reverse flex-column-reverse">
                   <Col
                     lg={{ size: 12, offset: 0 }}
                     md={{ size: 4, offset: 0 }}
