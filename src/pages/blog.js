@@ -10,6 +10,7 @@ import Aside from "../components/aside"
 import BlogSearch from "../components/shared-components/blogSearch"
 import HeaderAside from "../components/shared-components/headerAside"
 import Categories from "../components/shared-components/categories"
+import RecentBlogs from "../components/recentBlogs"
 
 const BlogPage = ({ data }) => {
   const featuredBlogs = data.featured.nodes
@@ -41,10 +42,11 @@ const BlogPage = ({ data }) => {
                   </Col>
                 </Row>
               </Aside>
-              <Aside className="d-lg-inline d-none">
+              <Aside className="d-lg-flex d-none">
                 <Row>
                   <Col xs="12">
                     <HeaderAside title="recent post" />
+                    <RecentBlogs blogs={allBlogs} />
                   </Col>
                 </Row>
               </Aside>
