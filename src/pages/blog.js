@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import FeatureBlogs from "../components/featureBlogs"
 import AllBlogs from "../components/allBlogs"
+import Aside from "../components/aside"
+import BlogSearch from "../components/shared-components/blogSearch"
 
 const BlogPage = ({ data }) => {
   const featuredBlogs = data.featured.nodes
@@ -15,9 +17,24 @@ const BlogPage = ({ data }) => {
         <Seo pageTitle="Blog" />
         <FeatureBlogs blogs={featuredBlogs} />
         <Container>
-          <Row className="py-5">
+          <Row className="py-5 flex-lg-row flex-column-reverse">
             <Col lg="8" xs="12">
               <AllBlogs blogs={allBlogs} />
+            </Col>
+            <Col lg="4" xs="12">
+              <Aside>
+                <Row className="flex-lg-column flex-md-row-reverse flex-column">
+                  <Col
+                    lg={{ size: 12, offset: 0 }}
+                    md={{ size: 4, offset: 0 }}
+                    xs={{ size: 7, offset: 5 }}
+                    className="d-flex justify-content-end"
+                  >
+                    <BlogSearch />
+                  </Col>
+                  <Col lg="12" md="8" xs="12"></Col>
+                </Row>
+              </Aside>
             </Col>
           </Row>
         </Container>
