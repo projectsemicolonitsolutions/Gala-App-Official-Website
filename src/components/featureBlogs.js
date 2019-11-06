@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 const FeatureBlogs = ({ blogs }) => {
   return (
     <section className="feature-blogs">
-      <Row className="pt-5 mt-5 m-0 px-3">
+      <Row className="pt-10 m-0 px-3">
         <Col
           xs="12"
           className="d-flex justify-content-end font-size-80 text-secondary"
