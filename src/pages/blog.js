@@ -9,6 +9,7 @@ import AllBlogs from "../components/allBlogs"
 import Aside from "../components/aside"
 import BlogSearch from "../components/shared-components/blogSearch"
 import HeaderAside from "../components/shared-components/headerAside"
+import Categories from "../components/shared-components/categories"
 
 const BlogPage = ({ data }) => {
   const featuredBlogs = data.featured.nodes
@@ -36,6 +37,7 @@ const BlogPage = ({ data }) => {
                   </Col>
                   <Col lg="12" md="8" xs="12">
                     <HeaderAside title="category" />
+                    <Categories blogs={allBlogs} />
                   </Col>
                 </Row>
               </Aside>
