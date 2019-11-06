@@ -28,7 +28,7 @@ const BlogPage = ({ data }) => {
               <Aside>
                 <Row className="flex-lg-column flex-md-row-reverse flex-column-reverse">
                   <Col
-                    lg={{ size: 12, offset: 0 }}
+                    lg="12"
                     md={{ size: 4, offset: 0 }}
                     xs={{ size: 7, offset: 5 }}
                     className="d-flex justify-content-end"
