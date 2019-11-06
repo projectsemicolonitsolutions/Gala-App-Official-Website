@@ -5,7 +5,11 @@ const BlogSearch = () => {
   return (
     <div
       className="blog-search w-100 d-flex flex-nowrap my-lg-5 my-3"
-      style={{ maxWidth: "400px", backgroundColor: "#f4f7f6" }}
+      style={{
+        maxWidth: "400px",
+        maxHeight: "40px",
+        backgroundColor: "#f4f7f6",
+      }}
     >
       <input
         type="text"
