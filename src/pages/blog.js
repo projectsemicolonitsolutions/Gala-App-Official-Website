@@ -41,6 +41,13 @@ const BlogPage = ({ data }) => {
                   </Col>
                 </Row>
               </Aside>
+              <Aside className="d-lg-inline d-none">
+                <Row>
+                  <Col xs="12">
+                    <HeaderAside title="recent post" />
+                  </Col>
+                </Row>
+              </Aside>
             </Col>
           </Row>
         </Container>
