@@ -5,8 +5,10 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import FeatureBlogs from "../components/featureBlogs"
 import AllBlogs from "../components/allBlogs"
+
 import Aside from "../components/aside"
 import BlogSearch from "../components/shared-components/blogSearch"
+import HeaderAside from "../components/shared-components/headerAside"
 
 const BlogPage = ({ data }) => {
   const featuredBlogs = data.featured.nodes
@@ -32,7 +34,9 @@ const BlogPage = ({ data }) => {
                   >
                     <BlogSearch />
                   </Col>
-                  <Col lg="12" md="8" xs="12"></Col>
+                  <Col lg="12" md="8" xs="12">
+                    <HeaderAside title="category" />
+                  </Col>
                 </Row>
               </Aside>
             </Col>
