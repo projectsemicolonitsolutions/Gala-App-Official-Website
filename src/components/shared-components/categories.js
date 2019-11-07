@@ -12,7 +12,7 @@ const Categories = ({ blogs }) => {
   return (
     <section className="d-flex flex-lg-column flex-row flex-wrap justify-content-center">
       {categoryList.map((category, index) => (
-        <Category title={category} items={blogs} key={blogs[index].id} />
+        <Category title={category} items={blogs} key={index} />
       ))}
     </section>
   )
