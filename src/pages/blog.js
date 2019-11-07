@@ -52,6 +52,12 @@ const BlogPage = ({ data }) => {
               </Aside>
             </Col>
           </Row>
+          <Row className="d-lg-none">
+            <Col xs={{ size: 10, offset: 1 }} md={{ size: 8, offset: 2 }}>
+              <HeaderAside title="recent post" />
+              <RecentBlogs blogs={allBlogs} />
+            </Col>
+          </Row>
         </Container>
       </Layout>
     </>
