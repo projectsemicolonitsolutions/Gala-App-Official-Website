@@ -1,9 +1,11 @@
 // ----- COLOR VARIABLES -----
 $default-color: #f56991;
-$default-color-dark: #e95780;
+$default-color-dark: #e7517c;
 $blog-color: #f4374e;
 $blog-color-dark: #dd4b39;
 $blog-color-light: #ff2e58;
+$blog-color-category: #ff6062;
+$blog-border-color: rgba(225, 160, 160, 0.4);
 $bg-color: #f6e5c4;
 
 // ----- BACKGROUND COLOR -----
@@ -18,6 +20,10 @@ $bg-color: #f6e5c4;
 
 .bg-body {
   background-color: $bg-color;
+}
+
+.bg-blog {
+  background-color: $blog-color;
 }
 
 // ----- TEXT COLOR -----
@@ -49,6 +55,10 @@ $bg-color: #f6e5c4;
 .blog-color {
   color: $blog-color;
 }
+
+.blog-color-category {
+  color: $blog-color-category;
+}
 // ----- FILL COLOR -----
 .fill-default {
   fill: $default-color;
@@ -74,4 +84,10 @@ $bg-color: #f6e5c4;
 
 .btn-default:hover {
   border-color: $default-color-dark;
+}
+
+.blog-border {
+  border-style: solid;
+  border-width: 2px;
+  border-color: $blog-border-color;
 }

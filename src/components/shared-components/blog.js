@@ -9,7 +9,7 @@ const Blog = ({ thumbnail, title, content, slug, className }) => {
         style={{
           width: "100%",
           height: "250px",
-          backgroundImage: thumbnail,
+          backgroundImage: `url(${thumbnail})`,
           backgroundColor: "gray",
           backgroundSize: "cover",
           backgroundPosition: "center",

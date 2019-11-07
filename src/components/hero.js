@@ -10,7 +10,7 @@ const Hero = () => {
         <Col
           lg="6"
           md="12"
-          className="d-flex-center text-center flex-column min-vh-100"
+          className="d-flex-center text-center flex-column py-5 mt-5"
         >
           <h4 className="font-family-quicksand-b">
             Best Mobile App for your Gala Adventure
@@ -30,7 +30,7 @@ const Hero = () => {
             </Col>
           </section>
         </Col>
-        <Col lg="6" className="d-none d-lg-flex">
+        <Col lg="6">
           <ImgMap />
         </Col>
       </Row>

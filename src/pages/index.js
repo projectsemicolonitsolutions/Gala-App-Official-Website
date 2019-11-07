@@ -7,23 +7,36 @@ import Tutorial from "../components/tutorial"
 import Features from "../components/features"
 import LatestBlog from "../components/latestBlog"
 import About from "../components/about"
-import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  const latestBlog = data.latest.nodes
   return (
     <>
-      <Layout>
-        <Seo pageTitle="Home" />
-        <Hero />
-        <Overview />
-        <Tutorial />
-        <Features />
-        <LatestBlog />
-        <About />
-      </Layout>
+      <Seo pageTitle="Home" />
+      <Hero />
+      <Overview />
+      <Tutorial />
+      <Features />
+      <LatestBlog blogs={latestBlog} />
+      <About />
     </>
   )
 }
 
+export const blogsQuery = graphql`
+  query {
+    latest: allBlogsJson {
+      nodes {
+        id
+        category
+        title
+        description
+        date
+        comment
+        img
+      }
+    }
+  }
+`
 export default IndexPage
