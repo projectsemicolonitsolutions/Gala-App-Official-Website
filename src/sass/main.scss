@@ -20,6 +20,16 @@
   box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.1);
 }
 
+.hide-scroll {
+  -ms-overflow-style: none; // for EI 10+
+  overflow: -moz-scrollbars-none; // for old Firefox
+  scrollbar-width: none; // for New Firefox
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none; // for Chrome
+}
+
 .h-50px,
 .wh-50px {
   height: 50px;
