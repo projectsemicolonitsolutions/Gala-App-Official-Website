@@ -16,9 +16,9 @@ const FeatureBlogs = ({ blogs }) => {
           </Link>
         </Col>
       </Row>
-      <Row className="m-0 mb-3 px-3 flex-nowrap overflow-auto">
+      <Row className="mr-0 mb-3 px-3 px-lg-3 px-md-5 flex-nowrap overflow-auto hide-scroll">
         {blogs.map(blog => (
-          <Col md="4" sm="6" xs="12" key={blog.id}>
+          <Col md="4" sm="5" xs="11" key={blog.id}>
             <FeatureCard featBlog={blog} />
           </Col>
         ))}
