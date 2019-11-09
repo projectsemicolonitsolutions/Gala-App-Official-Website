@@ -43,7 +43,7 @@
     "title": "Discover the Top Milktea Shop in Metro Manila",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda expedita amet explicabo ex inventore, aperiam facere vero! Consectetur quia rem, adipisci possimus enim ea maxime nemo esse molestiae ipsam.",
     "date": "June 14, 2019",
-    "featured": false,
+    "featured": true,
     "comment": [
       "Lorem ipsum, info",
       "Lorem impsum, about",
