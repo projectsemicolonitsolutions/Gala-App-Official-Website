@@ -1,6 +1,7 @@
 import React from "react"
 import Message from "../../assets/svg/comment.svg"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import { toKababCase } from "../custome-function/toKababCase"
 
 const FeatureCard = ({ featBlog }) => {
   const { category, title, date, comment, img, slug } = featBlog
@@ -16,12 +17,7 @@ const FeatureCard = ({ featBlog }) => {
       }
     }
   `)
-  const toKababCase = stringCase =>
-    stringCase
-      .replace(/\s/g, "-")
-      .replace(/,/g, "")
-      .replace(/!/g, "")
-      .toLowerCase()
+
   return (
     <div
       className="m-1 w-100 bg-cover bg-norepeat bg-center"

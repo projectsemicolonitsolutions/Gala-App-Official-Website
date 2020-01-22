@@ -2,6 +2,7 @@ import React from "react"
 import "./styledBlogCard.scss"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import { toKababCase } from "../custome-function/toKababCase"
 
 import Comment from "../../assets/svg/comment-regular.svg"
 import Facebook from "../../assets/svg/facebook-f.svg"
@@ -27,12 +28,6 @@ const StyledBlogCard = ({ blog }) => {
   `)
 
   const imgQueryResult = imgQuery.blogImage2.childImageSharp
-  const toKababCase = stringCase =>
-    stringCase
-      .replace(/\s/g, "-")
-      .replace(/,/g, "")
-      .replace(/!/g, "")
-      .toLowerCase()
 
   return (
     <div className="styled-blog-card ml-3 m-2 mb-5 d-flex flex-column">
