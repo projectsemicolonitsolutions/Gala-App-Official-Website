@@ -11,10 +11,11 @@ import Seo from "../components/seo"
 
 const IndexPage = ({ data }) => {
   const latestBlog = data.latest.nodes
+  const { description } = data.site.siteMetadata
   return (
     <>
       <Seo pageTitle="Home" />
-      <Hero />
+      <Hero description={description} />
       <Overview />
       <Tutorial />
       <Features />
@@ -35,6 +36,11 @@ export const blogsQuery = graphql`
         date
         comment
         img
+      }
+    }
+    site {
+      siteMetadata {
+        description
       }
     }
   }

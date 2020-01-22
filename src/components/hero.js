@@ -3,7 +3,7 @@ import { Row, Col } from "reactstrap"
 import Subcribe from "./shared-components/subscription"
 import ImgMap from "./imgMap"
 
-const Hero = () => {
+const Hero = ({ description }) => {
   return (
     <main className="bg-body">
       <Row className="pt-5 m-0 align-items-stretch">
@@ -18,10 +18,7 @@ const Hero = () => {
           <section className="d-flex justify-content-center">
             <Col lg="8" md="10" xs="11">
               <p className="font-family-quicksand-r font-size-90 text-muted my-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
+                {description}
               </p>
               <Subcribe
                 title="Notify me"

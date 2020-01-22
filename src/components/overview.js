@@ -19,8 +19,9 @@ const Overview = () => {
           <Col lg="4" md="6" xs="12">
             <Card
               title="Discover"
-              content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore"
+              content="Get a list of newly sighted places to visit that will fulfill 
+              your interest and travel must. This would be base with your interest and 
+              highest rating to visit place around the Philippines"
               shadow
               className="text-center rounded m-3"
             />
@@ -28,8 +29,10 @@ const Overview = () => {
           <Col lg="4" md="6" xs="12" className="pt-lg-5">
             <Card
               title="Plan"
-              content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore"
+              content="Manage and Organize your travel journey and expenses we are a 
+              one-stop app for your travel needs. Make your way plan and organize your 
+              journey, whether you are looking for the best itinerary or DIY your activities,
+              we will give it to you."
               shadow
               className="text-center rounded m-3 mt-lg-5"
             />
@@ -37,8 +40,9 @@ const Overview = () => {
           <Col lg="4" md="6" xs="12">
             <Card
               title="Share"
-              content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                      sed do eiusmod tempor incididunt ut labore et dolore"
+              content="Share the world, how great your travel experience is, and make them aware 
+              of some beautiful tourism spots that surely make your journey breathe-taking and 
+              and enjoy every scenery, food, instagrammable places that nature offers."
               shadow
               className="text-center rounded m-3"
             />

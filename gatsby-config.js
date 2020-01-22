@@ -1,7 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Gala App`,
-    description: ``,
+    description: `Imagine a one-stop app for all your travel details and getting a heads up as things happen throughout your journey.
+    Gala will make your travel experience bring to a whole new level. Experience what it's like to travel with Gala app.
+    
+    Try the travel app that keeps up with you. So many travels, so many want to visit? Let Gala app worry about the details,
+    so don't have to stress out searching for little information on your journey`,
     email: `lakwatsa.buddy@mygala.com`,
     social: {
       facebook: `http://www.facebook.com/GalaAppPh`,

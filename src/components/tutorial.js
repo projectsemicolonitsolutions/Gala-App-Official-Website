@@ -1,53 +1,56 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
-import TutCard from "./shared-components/tutCard";
+import React from "react"
+import { Container, Row, Col } from "reactstrap"
+import TutCard from "./shared-components/tutCard"
 
 const Tutorial = () => {
   return (
-    <section id="tutorial" className="bg-default py-5 text-white text-center">
+    <section
+      id="tutorial"
+      className="bg-default pb-4 pt-5 text-white text-center"
+    >
       <Container>
         <Row className="justify-content-center">
           <Col lg="7" xs="11">
             <h4 className="font-family-quicksand-book">How Does It Works?</h4>
-            <p className="font-family-quicksand-l font-size-90 m-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum dolor sit amet.
-            </p>
           </Col>
         </Row>
 
         <hr
           width="70%"
           className="border-primary d-none d-lg-block"
-          style={{ marginBottom: "-100px", marginTop: "100px" }}
+          style={{ marginBottom: "-60px", marginTop: "100px" }}
         />
         <Row>
           <Col md="4" xs="12">
             <TutCard
               title="Download The App"
-              content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod."
-              className="mb-lg-0 mb-sm-3"
+              content="Download the Gala app and you'll have one less thing to 
+              worry about your worry about your Gala-venture and wanderlust needs"
+              className="mb-lg-0 mb-sm-3 justify-content-start"
             />
           </Col>
           <Col md="4" xs="12">
             <TutCard
               title="Search for Place or Activity"
-              content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod."
-              className="mb-lg-0 mb-sm-3"
+              content="Let Gala help you with the detailsof your Gala-venture and
+              give you some recommendation base on your interest, wether you want to 
+              eat or relax, Gala will make your crave fulfill"
+              className="mb-lg-0 mb-sm-3 justify-content-start"
             />
           </Col>
           <Col md="4" xs="12">
             <TutCard
               title="Share your Gala Adventure"
-              content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod."
-              className="mb-lg-0 mb-sm-3"
+              content="Don't be shy, share with the community your Gala-venture and make 
+              them aware of new tourist spot visit and places to eat. Make them experience 
+              the journey that you have"
+              className="mb-lg-0 mb-sm-3 justify-content-start"
             />
           </Col>
         </Row>
       </Container>
     </section>
-  );
-};
+  )
+}
 
-export default Tutorial;
+export default Tutorial
