@@ -15,7 +15,7 @@ $bg-color: #f6e5c4;
 }
 
 .btn-default:hover {
-  background-color: $default-color-dark;
+  background-color: $default-color-dark !important;
 }
 
 .bg-body {
