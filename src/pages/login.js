@@ -1,9 +1,20 @@
 import React from "react"
 import { Container, Row, Form, Input, Button } from "reactstrap"
+import Axios from "axios"
 
 import BrandLogo from "../assets/svg/logo.svg"
 import User from "../assets/svg/user.svg"
 import Key from "../assets/svg/key.svg"
+
+const onSubmit = () => {
+  const data = {
+    username: document.querySelector("#username").value,
+    password: document.querySelector("#password").value,
+  }
+  Axios.post("https://blog-dev.taragala.com/api/pub/admin/login", data)
+    .then(res => console.log(res))
+    .catch(err => console.error(err))
+}
 
 const Login = () => {
   return (
@@ -38,6 +49,7 @@ const Login = () => {
               </div>
               <Input
                 type="text"
+                id="username"
                 placeholder="Username"
                 className="input-default border-0"
               />
@@ -51,11 +63,16 @@ const Login = () => {
               </div>
               <Input
                 type="password"
+                id="password"
                 placeholder="Password"
                 className="input-default border-0"
               />
             </Row>
-            <Button block className="btn-default btn-round-l mb-5">
+            <Button
+              block
+              className="btn-default btn-round-l mb-5"
+              onClick={onSubmit}
+            >
               LOGIN
             </Button>
             <p className="text-center">
